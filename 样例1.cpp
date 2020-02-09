@@ -1,65 +1,65 @@
 #include<stdio.h>
 #include<string.h>
-int n1(char s[10])
+int n1(char a[10])
 {
-    if(strcmp(s,"Áã")==0)    return 0;
-    else if(strcmp(s,"Ò»")==0)   return 1; 
-    else if(strcmp(s,"¶ş")==0)   return 2;
-    else if(strcmp(s,"Èı")==0)   return 3;
-    else if(strcmp(s,"ËÄ")==0)   return 4;  
-    else if(strcmp(s,"Îå")==0)   return 5;
-    else if(strcmp(s,"Áù")==0)   return 6;
-    else if(strcmp(s,"Æß")==0)   return 7;
-    else if(strcmp(s,"°Ë")==0)   return 8;
-    else if(strcmp(s,"¾Å")==0)   return 9;
-    else if(strcmp(s,"Ê®")==0)   return 10;
+    if(strcmp(a,"é›¶")==0)    return 0;
+    else if(strcmp(a,"ä¸€")==0)   return 1; 
+    else if(strcmp(a,"äºŒ")==0)   return 2;
+    else if(strcmp(a,"ä¸‰")==0)   return 3;
+    else if(strcmp(a,"å››")==0)   return 4;  
+    else if(strcmp(a,"äº”")==0)   return 5;
+    else if(strcmp(a,"å…­")==0)   return 6;
+    else if(strcmp(a,"ä¸ƒ")==0)   return 7;
+    else if(strcmp(a,"å…«")==0)   return 8;
+    else if(strcmp(a,"ä¹")==0)   return 9;
+    else if(strcmp(a,"å")==0)   return 10;
 }
 
-int suan(char s[10],int m,int n)
+int add(char a[10],int x,int y)
 {   
-    int s1;
-    if(strcmp(s,"Ôö¼Ó")==0)   s1=m+n;
-    if(strcmp(s,"¼õÉÙ")==0)   s1=m-n;
-    return s1;
+    int a1;
+    if(strcmp(a,"å¢åŠ ")==0)   a1=x+y;
+    if(strcmp(a,"å‡å°‘")==0)   a1=x-y;
+    return a1;
 }
 
-char n2(int k)
+char n2(int p)
 {
-    if(k==0)    printf("Áã");
-    else if(k==1)    printf("Ò»");
-    else if(k==2)    printf("¶ş");
-	else if(k==3)    printf("Èı");
-    else if(k==4)    printf("ËÄ");
-    else if(k==5)    printf("Îå");
-    else if(k==6)    printf("Áù");
-    else if(k==7)    printf("Æß");
-    else if(k==8)    printf("°Ë");
-    else if(k==9)    printf("¾Å");
-    else if(k==10)    printf("Ê®");
+    if(p==0)    printf("é›¶");
+    else if(p==1)    printf("ä¸€");
+    else if(p==2)    printf("äºŒ");
+	else if(p==3)    printf("ä¸‰");
+    else if(p==4)    printf("å››");
+    else if(p==5)    printf("äº”");
+    else if(p==6)    printf("å…­");
+    else if(p==7)    printf("ä¸ƒ");
+    else if(p==8)    printf("å…«");
+    else if(p==9)    printf("ä¹");
+    else if(p==10)    printf("å");
 	return 0;
 }
 int main()
 {
-	int n1(char s[10]);
-    int suan(char s[10],int m,int n);
-    char n2(int k);
-    char a[10],b[10],c[10],d[10];
-    int x,y; 
-    scanf("%s %s %s %s",&a,&b,&c,&d);
-    x=n1(d);
+	int n1(char a[10]);
+    int add(char a[10],int x,int y);
+    char n2(int p);
+    char q[10],w[10],e[10],r[10];
+    int m,n; 
+    scanf("%s %s %s %s",&q,&w,&e,&r);
+    m=n1(r);
     while(1)
     {
-        scanf("%s",a);
-        if(strcmp(a,"¿´¿´")==0)
+        scanf("%s",q);
+        if(strcmp(q,"çœ‹çœ‹")==0)
         {
-            scanf("%s",b);
+            scanf("%s",w);
             break;
         } 
         else
         { 
-            scanf("%s %s",b,c);
-            y=n1(c);
-            x=suan(b,x,y); 
+            scanf("%s %s",w,e);
+            n=n1(e);
+            m=add(b,m,n); 
         }  
     }
     n2(x);
