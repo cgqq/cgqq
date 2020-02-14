@@ -59,9 +59,9 @@ int main()
         { 
             scanf("%s %s",w,e);
             n=n1(e);
-            m=add(b,m,n); 
+            m=add(w,m,n); 
         }  
     }
-    n2(x);
+    n2(m);
     return 0;
 } 
